@@ -1,0 +1,60 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMP</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Remova as margens padrão do corpo */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Adicione isso para evitar a barra de rolagem */
+        }
+
+        /* Defina a imagem para ocupar toda a tela */
+        .image-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1; /* Para colocar a imagem atrás do conteúdo */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para preencher todo o espaço sem distorção */
+        }
+
+        /* Restante do seu CSS... */
+        /* Adicione outras regras de estilo aqui, se necessário */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="overlay">
+                <h1>Bem-vindo à FMP</h1>
+                <p> A Faculdade Municipal de Palhoça oferece diversos cursos e programas de excelência. que fica localizada na ponte do imaruim . E vem atentendo diversas pessoas cada vez mais e mais .</p>
+            </div>
+        </section>
+    </main>
+    <!-- Mova a seção da imagem para fora do <main> para garantir que ela fique por trás do conteúdo -->
+    <section class="image-section">
+        <img src="https://img.ibxk.com.br/materias/5866/21577.jpg?w=700" alt="uma flor">
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
